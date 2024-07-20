@@ -148,7 +148,6 @@ items/sorted_ore_10 1 True
 items/tin 1 True
 mood_effects/ate_without_chair 1 True
 items/log 1 True
-misc/world_object_destroyed 1 True
 items/bar 1 True
 items/stackable_piston_lift 1 True
 items/wooden_town_gate 1 True
@@ -216,10 +215,8 @@ items/lilypad 1 True
 items/rutile 1 True
 items/apple 1 True
 characters/wandering_trader 1 False
-misc/world_object_harvested 1 True
 items/copper_ore 1 True
 characters/scorpion 1 False
-misc/world Infinity True
 items/pantry 1 True
 inventories/cheese_vat 1 True
 items/doormat 1 True

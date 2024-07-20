@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class food_dipsenser : character_walk_to_interactable, IAddsToInspectionText
+public class food_dispenser : character_walk_to_interactable, IAddsToInspectionText
 {
     public item_dispenser item_dispenser;
 

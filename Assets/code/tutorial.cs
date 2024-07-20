@@ -542,7 +542,7 @@ class basic_camp_requirement : tutorial_object
         bool path_to_guard_spot = false;
         bool planter_connected_to_pantry = false;
 
-        food_dipsenser pantry = null;
+        food_dispenser pantry = null;
         character_tended_field planter = null;
 
         if (player.current != null)
@@ -559,10 +559,10 @@ class basic_camp_requirement : tutorial_object
                             path_to_planter = true;
                             planter = (character_tended_field)e.interactable;
                         }
-                        if (e.interactable is food_dipsenser)
+                        if (e.interactable is food_dispenser)
                         {
                             path_to_pantry = true;
-                            pantry = (food_dipsenser)e.interactable;
+                            pantry = (food_dispenser)e.interactable;
                         }
                     }
                     return path_to_bed && path_to_planter && path_to_pantry && path_to_guard_spot;

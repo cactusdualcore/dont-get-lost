@@ -133,5 +133,19 @@ public static class ui_colors
             return _cycle;
         }
     }
-    static Color[] _cycle;
+
+    static Color[] _cycle = new Color[] {
+        new Color(1, 0, 0),
+        new Color(0, 1, 0),
+        new Color(0, 0, 1),
+        new Color(0, 1, 1),
+        new Color(1, 0, 1),
+        new Color(1, 1, 0),
+        new Color(1, 0.5f, 0),
+        new Color(1, 0, 0.5f),
+        new Color(0.5f, 1, 0),
+        new Color(0, 1, 0.5f),
+        new Color(0.5f, 0, 1),
+        new Color(0, 0.5f, 1)
+    };
 }

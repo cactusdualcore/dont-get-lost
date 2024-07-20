@@ -136,7 +136,7 @@ public class lighting : MonoBehaviour
         }
 
         // Keep ambient occlusion up-to-date
-        UnityEngine.Rendering.HighDefinition.AmbientOcclusion ao;
+        UnityEngine.Rendering.HighDefinition.ScreenSpaceAmbientOcclusion ao;
         if (options_menu.global_volume.profile.TryGet(out ao))
         {
             if (player.current != null)

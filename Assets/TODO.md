@@ -1,9 +1,10 @@
-TODO
+# TODO
+
 - Work out the exact swing-path of melee weapons in order to interpolate and detect collisions
 - Optimize chase paths
-	don't double back if thats what the player did
-	Make characters fall if they are following a chase path over a cliff
-	Figure out how to stop enemies bunching up when chasing
+ don't double back if thats what the player did
+ Make characters fall if they are following a chase path over a cliff
+ Figure out how to stop enemies bunching up when chasing
 - Point-to-point connection building (e.g ropes for a rope bridge)
 - Remove the off-by-one thing happenng with player.slot_equipped (not a bug, just
   at some points in the code is indexed from 0 and others from 1, which is mildly annoying).
@@ -11,7 +12,7 @@ TODO
 - Make time command work from non-auth clients
 - PvP hit markers
 - Update all the on_ methods in the networked class to be listeners that can be +='d (big job, but would
-  allow the simplification of the code in a lot of places) - does the new callbacks structure of 
+  allow the simplification of the code in a lot of places) - does the new callbacks structure of
   IExtendsNetworked cover these use cases?
 - town_path_element.path spread load across multiple frames.
 - Settlers heads move over to their shoulder with time
@@ -38,10 +39,10 @@ TODO
 - Limit on number of items market stall can sell (improved versions can sell more?)
 - Global scroll speed controls
 - Subtutorials - the below should not really be order-dependant:
-	- Tutorial step for dining table (triggers when the player first makes one)
-	- Tutorial step for breadmaking (triggers when the player first researches breadmaking)
+  - Tutorial step for dining table (triggers when the player first makes one)
+  - Tutorial step for breadmaking (triggers when the player first researches breadmaking)
 - More foliage? (small plants/flowers)
-- Buildings take a wider variety of materials (too many plank+log+x buildings - 
+- Buildings take a wider variety of materials (too many plank+log+x buildings -
   would help with crafting menu clutter/introduce progression)
 - Town name markers when far away
 - Debug save+exit/re-enter game

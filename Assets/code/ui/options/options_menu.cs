@@ -195,7 +195,7 @@ public class options_menu : MonoBehaviour
         if (!global_volume.profile.TryGet(out fog))
             throw new System.Exception("Global volume has no fog override!");
 
-        UnityEngine.Rendering.HighDefinition.AmbientOcclusion ao;
+        UnityEngine.Rendering.HighDefinition.ScreenSpaceAmbientOcclusion ao;
         if (!global_volume.profile.TryGet(out ao))
             throw new System.Exception("Global volume has no ambient occlusion override!");
 

@@ -11,10 +11,10 @@ version=$date.$short_hash
 
 # Generate a cs source file with embedded version info
 gs="gen_server_data.cs"
-echo "static class gen_server_data" > $gs
-echo "{" >> $gs
-echo '    public static string version => "'$version'";' >> $gs
-echo "}" >> $gs
+echo "static class gen_server_data" >$gs
+echo "{" >>$gs
+echo '    public static string version => "'$version'";' >>$gs
+echo "}" >>$gs
 
 # Source files to compile/compiler options
 SRC="server.cs standalone_server.cs network_utils.cs client.cs $gs"
@@ -24,7 +24,7 @@ MCS="-out:server -langversion:latest -define:STANDALONE_SERVER"
 MCS="$MCS -define:NO_SERVER_TIMEOUT"
 
 # Make subdirectory to build the server in
-mkdir server 2> /dev/null
+mkdir server 2>/dev/null
 
 # Copy source files/server data to the subdirectory
 cp $SRC server

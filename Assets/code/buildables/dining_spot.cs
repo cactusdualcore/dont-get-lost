@@ -31,7 +31,7 @@ public class dining_spot : character_walk_to_interactable, IAddsToInspectionText
             var spot = path_element();
             spot.iterate_connected((e) =>
             {
-                var fd = e.interactable as food_dipsenser;
+                var fd = e.interactable as food_dispenser;
                 if (fd != null) food_dispensers.Add(fd);
                 return false;
             }, same_room: true);
@@ -45,7 +45,7 @@ public class dining_spot : character_walk_to_interactable, IAddsToInspectionText
     // walk_to_settler_interactable //
     //##############################//
 
-    List<food_dipsenser> food_dispensers = new List<food_dipsenser>();
+    List<food_dispenser> food_dispensers = new List<food_dispenser>();
     List<item> foods = new List<item>();
     int index = 0;
     town_path_element.path path;
